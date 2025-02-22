@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .outerBox{
+      background-color: black;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      height: 748px;
+      width: 748px;
+      gap: 5px;
+    }
+
+    .reddiv{
+      background-color: #E72F24;
+    }
+
+    .whitediv1{
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+    
+    .whitediv2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .whitediv3{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .bluediv{
+      background-color: #004592;
+    }
+
+    .whitediv4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      border-top: solid black 5px;
+    }
+
+    .whitediv5{
+      background-color: #F0F1EC;
+    }
+
+    .yellodiv{
+      background-color: #F9D01E;
+    }
+
+    .blackdiv{
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="outerBox">
+    <div class="reddiv"></div>
+    <div class="whitediv1"></div>
+    <div class="whitediv2"></div>
+    <div class="whitediv3"></div>
+    <div class="bluediv"></div>
+    <div class="whitediv4"></div>
+    <div class="whitediv5"></div>
+    <div class="yellodiv"></div>
+    <div class="blackdiv"></div>
+  </div>
+</body>
+
+</html>
